@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+	<style>
+		* {
+			height: 100%;
+			width: 100%;
+			padding: 0;
+			margin: 0;
+			border: 0;
+		}
+
+		body {
+			background-attachment: fixed;
+			background-size: 100% auto;
+		}
+
+		.blended_grid {
+			display: block;
+			width: 100%;
+			height: 100%;
+			overflow: auto;
+			margin: 0px auto 0 auto;
+		}
+
+		.pageHeader {
+			background-color: rgba(179, 30, 30, 0.853);
+			float: left;
+			clear: none;
+			height: 10%;
+			width: 100%;
+		}
+
+	
+
+		.pageContent {
+			background-color: rgba(0, 0, 0, 0.5);
+			float: left;
+			clear: none;
+			height: 80%;
+			width: 100%;
+		}
+
+	
+		.pageFooter {
+			background-color: rgba(179, 30, 30, 0.853);
+			float: left;
+			clear: none;
+			height: 10%;
+			width: 100%;
+		}
+        p.headerText {
+            font-weight: bold;
+			font-size: 25px;
+            text-align: center;
+			margin-top: 1em;
+			
+  margin-bottom: 1em;
+		
+        }
+
+		p.footerText {
+            font-weight: bold;
+			font-size: 15px;
+            text-align: end;
+			margin-top: .5em;
+		
+        }
+		
+	</style>
+
+	<title>Lab 3</title>
+	<meta name="description" content="Map of wild fires in USA">
+
+</head>
+
+<body>
+	<div class="blended_grid">
+		<div class="pageHeader"> 
+            <p class = "headerText"> Map of Burn Sites in USA</p>
+            </div>
+		
+		<div class="pageContent">
+            <iframe src="https://www.arcgis.com/apps/dashboards/344916d2ec6a4556bbf33a1ff867b8c3" title="Burn sites in USA, SNOTEL AND NEON DATA">
+            </iframe>
+		</div>
+		
+		<div class="pageFooter"> 
+			<p class = "footerText"> By Melissa Linares</p>
+		</div>
+	</div>
+</body>
+
+</html>
